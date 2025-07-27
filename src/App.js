@@ -12,7 +12,6 @@ function App() {
     { id: 'french', name: 'French', flag: '🇫🇷' },
     { id: 'spanish', name: 'Spanish', flag: '🇪🇸' },
     { id: 'tamil', name: 'Tamil', flag: ' 🇮🇳' },
-    { id: 'hindi', name: 'Hindi', flag: '🇮🇳' },
   ];
 
   const handleTranslate = async () => {
@@ -35,7 +34,6 @@ function App() {
       
       const data = await response.json();
       console.log('Translation result:', data);
-      
       // Store the translation result and show results screen
       setTranslationResult(data);
       setShowResults(true);
