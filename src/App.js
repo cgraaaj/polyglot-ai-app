@@ -3,15 +3,16 @@ import './App.css';
 
 function App() {
   const [text, setText] = useState('How are you?');
-  const [selectedLanguage, setSelectedLanguage] = useState('french');
+  const [selectedLanguage, setSelectedLanguage] = useState('tamil');
   const [showResults, setShowResults] = useState(false);
   const [translationResult, setTranslationResult] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
   const languages = [
+    { id: 'tamil', name: 'Tamil', flag: ' 🇮🇳' },
     { id: 'french', name: 'French', flag: '🇫🇷' },
     { id: 'spanish', name: 'Spanish', flag: '🇪🇸' },
-    { id: 'tamil', name: 'Tamil', flag: ' 🇮🇳' },
+    { id: 'german', name: 'German', flag: '🇩🇪' },
   ];
 
   const handleTranslate = async () => {
